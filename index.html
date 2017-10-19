@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/simon-game.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <title>Basic Calculator</title>
+  </head>
+  <body>
+    <div class="screen">
+      <div class="board">
+        <div class="center">
+          <div class="control-container">
+            <div class="control-logo">
+              simon
+            </div>
+          <div class="control">
+            <div id="score">--</div>
+          </div>
+          <div class="control">
+            <div class="bcont">
+              <button class="small-button" id="start"></button>
+                start
+              </div>
+              <div class="bcont">
+                <button class="small-button" id="strict"></button>
+                strict
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="paddle-container">
+          <div class="paddles">
+            <svg height ="100%" width="100%" viewBox="0 0 230 230">
+              <path id="green0"
+                     d="M 0 217
+                        L 116 217
+                        A 118 118, 0,0,1, 217 119.6
+                        L 217 0
+                        A 230 230, 0, 0, 0, 0 217"/>
+            </svg>
+          </div>
+          <div class="paddles">
+            <svg height ="100%" width="100%" viewBox="0 0 230 230">
+              <path id="red1"
+                     d="M 230 217
+                        L 116 217
+                        A 118 118, 0,0,0, 13 119.6
+                        L 13 0
+                        A 230 230, 0, 0, 1, 230 217"/>
+            </svg>
+          </div>
+          <div class="paddles">
+            <svg height ="100%" width="100%" viewBox="0 0 230 230">
+              <path id="yellow2"
+                     d="M 0 13
+                        L 116 13
+                        A 118 118, 0,0,0, 217 119.6
+                        L 217 230
+                        A 230 230, 0, 0, 1, 0 13"/>
+            </svg>
+          </div>
+          <div class="paddles">
+            <svg height ="100%" width="100%" viewBox="0 0 230 230">
+              <path id="blue3"
+                     d="M 13 230
+                        L 13 119.6
+                        A 118 118, 0,0,0, 116, 13
+                        L 230 13
+                        A 230 230, 0, 0, 1, 13 230"/>
+            </svg>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
